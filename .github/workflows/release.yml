@@ -34,8 +34,7 @@ jobs:
             console.log(approvals.data)
 
             approvals.data.forEach(element => {
-              
-              console.log(element.user)
-              
+                if (element.user.login == context.actor)
+                  core.setFailed(`Deployment to the environment is approved by the same person (${context.actor}) who initiated the deployment. This is not allowed.`);            
               });
 
