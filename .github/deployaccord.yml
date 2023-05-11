@@ -1,30 +1,30 @@
-environments:
-  - name: prd
-    approver_groups:
-      - name: Group A
-        approvers:
-          - name: Alice
-            email: alice@example.com
-        required_approvals: 1
-      - name: Group B
-        approvers:
-          - name: Bob
-            email: bob@example.com
-          - name: Charlie
-            email: charlie@example.com
-        required_approvals: 2
-    self_approval_allowed: false
+Environments:
+  - Name: prd
+    ApproverGroups:
+      - Name: Group A
+        Approvers:
+          - Name: Alice
+            Email: alice@example.com
+        RequiredApprovals: 1
+      - Name: Group B
+        Approvers:
+          - Name: Bob
+            Email: bob@example.com
+          - Name: Charlie
+            Email: charlie@example.com
+        RequiredApprovals: 2
+    SelfApprovalAllowed: false
     time_restriction:
       start_time: "18:00"
       end_time: "08:00"
       additional_approvers:
         - name: Manager
           email: manager@example.com
-  - name: staging
-    approver_groups:
-      - name: Group C
-        approvers:
-          - name: David
-            email: david@example.com
-        required_approvals: 1
-    self_approval_allowed: true
+  - Name: staging
+    ApproverGroups:
+      - Name: Group C
+        Approvers:
+          - Name: David
+            Email: david@example.com
+        RequiredApprovals: 1
+    SelfApprovalAllowed: true
