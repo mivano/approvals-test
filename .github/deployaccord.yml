@@ -9,7 +9,7 @@ Environments:
       - Name: Group B
         Approvers:
           - Name: Bob
-            Email: bob@example.com
+            Email: mvanoudheusden@gmail.com
           - Name: Charlie
             Email: charlie@example.com
         RequiredApprovals: 2
