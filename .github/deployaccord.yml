@@ -4,7 +4,7 @@ Environments:
       - Name: Group A
         Approvers:
           - Name: Alice
-            Email: alice@example.com
+            Email: mvanoudheusden@gmail.com
         RequiredApprovals: 1
       - Name: Group B
         Approvers:
